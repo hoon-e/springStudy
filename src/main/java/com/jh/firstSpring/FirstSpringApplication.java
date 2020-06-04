@@ -16,32 +16,33 @@ public class FirstSpringApplication {
 	}
 }
 
-@Entity
-class Cat {
-	@Id
-	@GeneratedValue
-	private Long id;
-	private String name;
-
-	Cat() {}
-
-	public Cat(String name){
-		this.name = name;
-	}
-
-	@Override
-	public String toString(){
-		return "Cat{" + "id=" + id + ", name='" + name + '\'' + '}';
-	}
-
-	public long getId(){
-		return id;
-	}
-
-	public String getName(){
-		return name;
-	}
-}
-
-@RepositoryRestResource
-interface CatRepository extends JpaRepository<Cat, Long> { }
+//
+//@Entity
+//class Cat {
+//	@Id
+//	@GeneratedValue
+//	private Long id;
+//	private String name;
+//
+//	Cat() {}
+//
+//	public Cat(String name){
+//		this.name = name;
+//	}
+//
+//	@Override
+//	public String toString(){
+//		return "Cat{" + "id=" + id + ", name='" + name + '\'' + '}';
+//	}
+//
+//	public long getId(){
+//		return id;
+//	}
+//
+//	public String getName(){
+//		return name;
+//	}
+//}
+//
+//@RepositoryRestResource
+//interface CatRepository extends JpaRepository<Cat, Long> { }
